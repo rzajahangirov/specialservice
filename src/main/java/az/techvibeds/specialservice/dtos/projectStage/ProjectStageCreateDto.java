@@ -1,0 +1,25 @@
+package az.techvibeds.specialservice.dtos.projectStage;
+
+
+import az.techvibeds.specialservice.enums.StageStatus;
+import jakarta.validation.constraints.*;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class ProjectStageCreateDto {
+    @NotBlank(message = "Stage name is required")
+    private String name;
+
+    @Min(value = 1, message = "Stage number must be at least 1")
+    private Integer stageNumber;
+
+    @Min(0) @Max(100)
+    private Double progressPercentage;
+
+    @NotNull(message = "Status is required")
+    private StageStatus status;
+}
