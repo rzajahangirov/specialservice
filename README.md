@@ -241,9 +241,3 @@ To authenticate in Swagger UI:
 - **Mahammad Rza Jahangirov**
   - GitHub: [@rzajahangirov](https://github.com/rzajahangirov)
   - Email: [jahangirovmahammadrza@gmail.com](mailto:jahangirovmahammadrza@gmail.com)
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
